@@ -15,10 +15,10 @@ const IdentifyYourCustomer = () => {
   return (
     <div className="w-[100%]">
       <div className="text-center">
-        <h1 className="font-semibold text-[40px] w-[40%] mx-auto mt-20 leading-[3rem]">
+        <h1 className="font-semibold lg:text-[40px] md:text-[40px] text-[20px] lg:w-[40%] w-[90%] mx-auto mt-20 lg:leading-[3rem] md:leading-[3rem] leading-[30px]">
           The most effective way to identify your customers
         </h1>
-        <p className="text-[#746c6c] w-[40%] mx-auto mt-3">
+        <p className="text-[#746c6c] lg:w-[40%] w-[90%]  mx-auto mt-3">
           Dotta, an AI-driven solution built to ensure product security, and
           establish customer trust.
         </p>
@@ -26,7 +26,7 @@ const IdentifyYourCustomer = () => {
       {/* TABS */}
 
       <div className="flex flex-col items-center mt-8">
-        <div className="flex gap-10  mb-6">
+        <div className="flex lg:gap-10 md:gap-10 gap-4 mb-6">
           <button
             className={`text-[#746c6c] font-semibold  relative ${
               activeTab === 1

@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { IoIosArrowUp } from "react-icons/io";
+import dottaLogo from "../../assets/dottaLogo.png";
 
 const MoblleNav = ({ isSidebarOpen, toggleSideBar }) => {
   const sideNavStyles = {
-    width: isSidebarOpen ? "translateX(0)" : "translateX(-100%)", // Adjust the width based on sidebar open state
-    transition: "transform 0.3s ease", // Apply transition for smooth animation
+    width: isSidebarOpen ? "translateX(0)" : "translateX(-100%)",
+    transition: "transform 0.3s ease",
+  };
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const handleToggleDropdown = () => {
+    setShowDropdown(!showDropdown);
   };
 
   return (
@@ -20,7 +27,7 @@ const MoblleNav = ({ isSidebarOpen, toggleSideBar }) => {
           <div className=" flex justify-between ">
             <div>
               <img
-                src="https://withdotta.com/_ipx/w_1920,q_75/%2Fimages%2Ficons%2Fdotta.png?url=%2Fimages%2Ficons%2Fdotta.png&w=1920&q=75"
+                src={dottaLogo}
                 alt="Dotta logo"
                 className="w-[70%] object-contain "
               />
@@ -36,18 +43,27 @@ const MoblleNav = ({ isSidebarOpen, toggleSideBar }) => {
 
           <div className=" relative">
             <ul className=" font-bold text-[#746c6c] text-[17px]  w-[100%] mt-10 ">
-              <li className="flex justify-between">
+              <li
+                className="flex justify-between"
+                onClick={handleToggleDropdown}
+              >
                 Solutions{" "}
-                <MdOutlineKeyboardArrowDown className="mt-[2px] text-[1.7rem]" />
+                {showDropdown ? (
+                  <IoIosArrowUp className="mt-[2px] text-[1.5rem]" />
+                ) : (
+                  <MdOutlineKeyboardArrowDown className="mt-[2px] text-[1.7rem]" />
+                )}
               </li>
-              <li className="flex  justify-between mt-6 ">
-                Use Cases
-                <MdOutlineKeyboardArrowDown className="mt-[2px] text-[1.7rem]" />
-              </li>
-              <li className="flex  justify-between mt-6 ">
-                Developers
-                <MdOutlineKeyboardArrowDown className="mt-[2px] text-[1.7rem]" />
-              </li>
+              <div>
+                {showDropdown && (
+                  <p className=" p-4 mt-2 text-btn-outline font-medium">
+                    Facial Biometric Verification
+                  </p>
+                )}
+              </div>
+
+              <li className="flex  justify-between mt-6 ">Use Cases</li>
+              <li className="flex  justify-between mt-6 ">Developers</li>
               <li className="mt-6 ">Pricing</li>
               <li className="mt-6 ">Blog</li>
             </ul>

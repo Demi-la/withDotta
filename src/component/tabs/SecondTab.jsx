@@ -4,8 +4,8 @@ import faceVerification from "../../assets/faceVerification.png";
 
 const SecondTab = () => {
   return (
-    <div className="bg-light-green pl-10 py-10 mx-16 rounded-[10px]">
-      <div className="flex  gap-[5rem]">
+    <div className="bg-light-green lg:pl-10 lg:pr-0 pr-10 lg:pb-10 lg:pt-10 pb-20 md:pt-0  pl-5 lg:mx-16 md:mx-0 mx-0 rounded-[10px] w-[100%]">
+      <div className="lg:flex  lg:gap-[5rem]">
         <div>
           <img
             src={faceVerification}
@@ -14,13 +14,13 @@ const SecondTab = () => {
           />
         </div>
         <div>
-          <p className="text-btn-outline font-bold bg-transparent-green py-[2px] px-[13px] rounded-[20px] mt-[2rem] w-[fit-content] ">
+          <p className="text-btn-outline font-bold bg-transparent-green py-[2px] px-[13px] rounded-[20px] lg:mt-[2rem]  md:mt-[0rem] w-[fit-content] ">
             DOTTA FACE VERIFICATION
           </p>
-          <h2 className="font-semibold text-[25px] mt-1 mb-2">
+          <h2 className="font-semibold lg:text-[25px] text-[23px] mt-1 mb-2 ">
             Accurate Biometric Verification
           </h2>
-          <p className="text-[#746c6c] w-[90%]">
+          <p className="text-[#746c6c] lg:w-[90%] w-[100%]">
             Ensure the security of your client's accounts by using both face
             detection and face match (comparison) to generate a confidence
             score.
@@ -43,11 +43,11 @@ const SecondTab = () => {
               confident results..
             </li>
           </ul>
-          <div className="flex mt-6 gap-2 ">
-            <button className=" p-[10px] w-[30%] rounded-[2rem] bg-gradient-to-br from-green-500 to-teal-400 text-[0.95em] text-white ">
+          <div className="lg:flex mt-6 gap-2 ">
+            <button className=" p-[10px] lg:w-[30%]  w-[100%]  rounded-[2rem] bg-gradient-to-br from-green-500 to-teal-400 text-[0.95em] text-white ">
               Learn More
             </button>
-            <button className="border border-btn-outline p-[10px] w-[30%] rounded-[1.91rem] bg-white text-[0.95em] text-btn-outline">
+            <button className="border border-btn-outline p-[10px] lg:w-[30%]  w-[100%] mt-2 lg:mt-0  rounded-[1.91rem] bg-white text-[0.95em] text-btn-outline">
               Get started for free
             </button>
           </div>
