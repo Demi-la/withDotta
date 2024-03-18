@@ -1,4 +1,4 @@
-import Navbar from "./component/Nav";
+import Navbar from "./component/navbar/Navbar";
 import Header from "./component/Header";
 import "./App.css"
 import UseCases from "./component/UseCases";

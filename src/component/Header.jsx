@@ -13,7 +13,7 @@ const Header = () => {
     <div className="hero_pattern w-[100%]">
       <div className="flex justify-between px-10 ">
         <div className="w-[60%]">
-          <p className="text-btn-outline font-bold bg-transparent-green py-[2px] px-[13px] rounded-[20px] mt-[4.5rem] w-[fit-content]">
+          <p className="text-btn-outline font-bold bg-transparent-green py-[2px] px-[13px] rounded-[20px] mt-[5rem] w-[fit-content]">
             Dotta - The future of trust
           </p>
           <h1 className="mt-[1rem] font-bold text-[48px] leadong-[62px] text-[#000000de] w-[60%]">
