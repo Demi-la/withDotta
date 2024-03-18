@@ -38,13 +38,13 @@ const Header = () => {
               Get started for free
             </button>
           </div>
-          <ul className="flex flex-wrap lg:flex-nowrap gap-8 gap-y-2  md:gap-[10rem] md:gap-y-2 lg:gap-y-0 mt-5 lg:mb-[4rem] mb-[1rem] lg:text-[18px] text-[16px]">
+          <ul className="grid lg:grid-cols-3  grid-cols-2 mt-5 lg:mb-[4rem] mb-[1rem] lg:text-[18px] text-[16px]">
             <li className="flex gap-1">
               <IoCheckmarkOutline className="text-btn-outline  mt-1" />
               2-day free trial
             </li>
             <li className="flex  gap-1">
-              <IoCheckmarkOutline className="text-btn-outline mt-1" />
+              <IoCheckmarkOutline className="text-btn-outline mt-1" /> 
               No Card Required
             </li>
             <li className="flex  gap-1">

@@ -6,8 +6,7 @@ import ThirdTab from "./tabs/ThirdTab";
 
 
 const IdentifyYourCustomer = () => {
-     const [activeTab, setActiveTab] = useState(1);
-    
+  const [activeTab, setActiveTab] = useState(1);
 
   const handleTabClick = (tabNumber) => {
     setActiveTab(tabNumber);
